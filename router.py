@@ -21,14 +21,14 @@ def generate_response(user_input):
     elif "pay" in user_input or "bill" in user_input:
         return [
             "💳 You can pay your bills here:\n\n"
-            f"{BASE_URL}/pay-online"
+            f"{BASE_URL}/online-payments"
         ]
 
     # 🚧 Potholes / complaints
     elif "pothole" in user_input or "complaint" in user_input or "report" in user_input:
         return [
             "🚧 You can report issues like potholes here:\n\n"
-            f"{BASE_URL}/residengivets/report-issue"
+            f"{BASE_URL}/ActionCenter"
         ]
 
     # 🚓 Public Safety
@@ -43,7 +43,7 @@ def generate_response(user_input):
     elif "job" in user_input or "career" in user_input:
         return [
             "🧑‍💼 Explore job opportunities here:\n\n"
-            f"{BASE_URL}/job-opportunities"
+            f"{BASE_URL}/Careers"
         ]
 
     # 📰 News (Scraper still used!)
