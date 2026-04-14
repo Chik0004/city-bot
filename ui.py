@@ -3,16 +3,16 @@ from router import generate_response
 
 st.set_page_config(page_title="City Assistant", page_icon="🏙️")
 
-#st.title("🏙️ City Assistant")
+st.title("🏙️ City Assistant")
 #st.image("Logo.png", width=50)
 #st.title("City Assistant")
-col1, col2 = st.columns([1, 6])
+"""col1, col2 = st.columns([1, 6])
 
 with col1:
     st.image("logo.png", width=40)
 
 with col2:
-    st.markdown("## City Assistant")
+    st.markdown("## City Assistant")"""
 # Initialize chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
